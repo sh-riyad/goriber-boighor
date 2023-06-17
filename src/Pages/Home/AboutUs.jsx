@@ -1,6 +1,6 @@
 function AboutUs() {
     return (
-        <div className="hero min-h-screen bg-base-200 dark:bg-gray-900">
+        <div className="hero min-h-screen bg-base-200 dark:bg-gray-900 mt-10">
             <div className="hero-content flex-col lg:flex-row">
                 <img src="https://i.ibb.co/GcDJfpy/about.png" className="md:w-1/2" />
                 <div className="md:w-1/2">

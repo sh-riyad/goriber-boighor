@@ -46,8 +46,8 @@ function UpdateBookForm() {
                 {/* page heading start */}
                 <div class="flex flex-wrap -mx-3 mb-6">
                     <div class="w-full px-3 text-center">
-                        <h1 className="test-bold text-4xl">Book Addition Zone</h1>
-                        <p>Insert information about your books that you wants to ADD</p>
+                        <h1 className="test-bold text-4xl text-orange-500">Book Updating Zone</h1>
+                        <p>Insert information about your books that you wants to Update</p>
                     </div>
                 </div>
                 {/* page heading ends here */}
@@ -95,7 +95,7 @@ function UpdateBookForm() {
                 </div>
                 {/* Form input section ends here */}
                 <div class="md:flex md:items-center">
-                    <div class="md:w-1/3">
+                    <div class="md:w-1/2">
                         <button class="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="Submit">
                             Update
                         </button>

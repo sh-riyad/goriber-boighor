@@ -42,7 +42,7 @@ function AddBooksForm() {
             <form onSubmit={handlePostBook} class="w-full max-w-lg">
                 <div class="flex flex-wrap -mx-3 mb-6">
                     <div class="w-full px-3 text-center">
-                        <h1 className="test-bold text-4xl">Book Addition Zone</h1>
+                        <h1 className="test-bold text-4xl text-orange-500">Book Addition Zone</h1>
                         <p>Insert information about your books that you wants to ADD</p>
                     </div>
                 </div>

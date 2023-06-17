@@ -3,7 +3,7 @@ function ContactFormx() {
     return (
     <div class="flex min-h-screen items-center justify-start dark:bg-gray-900 bg-white">
         <div class="mx-auto w-full max-w-lg">
-            <h1 class="text-4xl font-medium">Contact us</h1>
+            <h1 class="text-4xl font-medium text-orange-500">Contact us</h1>
             <p class="mt-3">Email us at help@goriberboighor.com or message us here:</p>
 
             <form class="mt-10">

@@ -11,13 +11,12 @@ function OurBooks() {
             {/* Our Books Heading */}
             <div class="flex flex-wrap -mx-3 mb-6 mt-7">
                     <div class="w-full px-3 text-center">
-                        <h1 className="test-bold text-4xl">Books Section</h1>
-                        <p>Books</p>
+                        <h1 className="test-bold text-4xl text-orange-500">The Book Boutique</h1>
                     </div>
                 </div>
 
 
-            <div>
+            <div className="mt-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     {books?.map((book) => (
                        <SingleBookCart key={book._id} book={book}/>
