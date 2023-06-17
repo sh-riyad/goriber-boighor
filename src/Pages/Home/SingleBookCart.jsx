@@ -7,7 +7,7 @@ function SingleBookCart({book}) {
                 <h2 className="card-title">{book?.bookname}</h2>
                 <p>{book?.writername}</p>
                 <div className="card-actions justify-end">
-                    <Link to={`/book/${book?._id}`}><button className="btn btn-primary">View Details</button></Link>
+                    <Link to={`/all-books/${book?._id}`}><button className="btn btn-primary">View Details</button></Link>
                 </div>
             </div>
         </div>

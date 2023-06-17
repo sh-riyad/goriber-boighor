@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 function ManageBooksTable() {
 
 
@@ -44,7 +45,8 @@ function ManageBooksTable() {
                                     <td>{book.subject}</td>
                                     {/* <td>{book.publisher}</td> */}
                                     <td>
-                                        <button className="btn btn-outline btn-success">Success</button>
+                                        <Link to={`/all-books/${book?._id}`}><button className="btn btn-outline btn-success">Details</button></Link>
+                                        <Link to={`/update-book/${book?._id}`}><button className="btn btn-outline btn-success">Update</button></Link>
                                         <button className="btn btn-outline btn-error">Error</button>
                                     </td>
                                     

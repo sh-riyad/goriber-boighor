@@ -8,8 +8,8 @@ function BookDetails() {
             <div className="max-w-6xl mx-auto">
                 <Navbar />
 
-                <div className=" my-10 mt-10 card lg:card-side bg-base-100 shadow-xl">
-                    <figure><img src="{details?.image}" alt={details?.bookname} /></figure>
+                <div className=" my-10 mt-10 card lg:card-side dark:bg-gray-900 shadow-xl">
+                    <figure ><img src={details?.image} alt={details?.bookname} /></figure>
                     <div className="card-body">
                         <h2 className="card-title">{details?.bookname}</h2>
                         <h2 className="card-title">{details?.writename}</h2>
