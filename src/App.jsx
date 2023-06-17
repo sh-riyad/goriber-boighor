@@ -6,8 +6,11 @@ import ManageBooks from './Pages/ManageBooks/ManageBooks';
 import AddBooks from './Pages/AddBooks/AddBooks';
 import AddReview from './Pages/AddReview/AddReview';
 import ContactUs from './Pages/ContactUs/ContactUs';
+import BookDetails from './Pages/BookDetails/BookDetails';
 
 function App() {
+
+  // Routes
   const router = createBrowserRouter([
     {
       path: "/",
@@ -34,6 +37,17 @@ function App() {
     {
       path:"/add-review",
       element:<AddReview/>
+    },
+
+    // Single data route
+    {
+      path: "/all-books/:id",
+      element:<BookDetails/>,
+      loader : function({params}){
+        //console.log(params)
+        return fetch(`http://localhost:3000/all-books/${params.id}`)
+      }
+
     }
   ])
 
