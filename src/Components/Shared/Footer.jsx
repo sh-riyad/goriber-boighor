@@ -13,9 +13,9 @@ function Footer() {
             </div>
             <div>
                 <div className="grid grid-flow-col gap-4">
-                    <BsFacebook size={32}></BsFacebook>
-                    <AiFillTwitterCircle size={36}></AiFillTwitterCircle>
-                    <AiFillYoutube size={35}></AiFillYoutube>
+                    <a href="https://facebook.com"><BsFacebook size={32}></BsFacebook></a>
+                    <a href="https://twitter.com"><AiFillTwitterCircle size={36}></AiFillTwitterCircle></a>
+                    <a href="https://youtube.com"><AiFillYoutube size={35}></AiFillYoutube></a>
                 </div>
             </div>
             <div>

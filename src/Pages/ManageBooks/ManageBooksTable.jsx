@@ -21,7 +21,7 @@ function ManageBooksTable() {
     function handleDeleteBook(bookId) {
         fetch(`http://localhost:3000/delete-book/${bookId}`, {
             method: "DELETE"
-        }).then(res => res.json)
+        }).then(res => res.json())
             .then(data => {
                 if (data.deletedCount > 0) {
                     const otherBook = books?.filter(book => book._id != bookId);
