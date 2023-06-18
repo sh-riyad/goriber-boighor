@@ -1,6 +1,6 @@
 import Navbar from "../../Components/Shared/Navbar";
 import Footer from "../../Components/Shared/Footer";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 function BookDetails() {
     const details = useLoaderData();
     return (
@@ -9,13 +9,13 @@ function BookDetails() {
                 <Navbar />
 
                 <div className=" my-10 mt-10 card lg:card-side dark:bg-gray-900 shadow-xl">
-                    <figure><img src={details?.image} alt={details?.bookname}/></figure>
+                    <figure><img src={details?.image } alt={details?.bookname}/></figure>
                     <div className="card-body">
                         <h2 className="card-title">{details?.bookname}</h2>
                         <h2 className="card-title">{details?.writename}</h2>
                         <p>{details?.description}</p>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Listen</button>
+                            <Link to="/"><button className="btn btn-primary">Go to Home</button></Link>
                         </div>
                     </div>
                 </div>
